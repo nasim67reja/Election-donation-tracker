@@ -1,5 +1,6 @@
 import SectionLayout from "@/components/common/SectionLayout";
 import Link from "next/link";
+import Contact from "@/components/specific/Contact";
 
 const page = () => {
   return (
@@ -25,6 +26,7 @@ const page = () => {
           </div>
         </SectionLayout>
       </div>
+      <Contact />
       <SectionLayout bg="">page</SectionLayout>
     </>
   );
