@@ -1,7 +1,7 @@
 import React from "react";
 import SectionLayout from "../common/SectionLayout";
 // import Accordions from "./Accordions";
-import { Accordions } from "./Accordions";
+// import { Accordions } from "./Accordions";
 import Progress from "../common/Progress";
 
 let faq: {
@@ -35,9 +35,7 @@ const About = () => {
           towards winning.
         </p>
         <div className="grid md:grid-cols-2 gap-14 mt-16">
-          <div className=" pt-6">
-            <Accordions arr={faq} />
-          </div>
+          <div className=" pt-6">{/* <Accordions arr={faq} /> */}</div>
 
           <div className="">
             <h3 className="heading-tertiary">Where It All Began</h3>

@@ -6,7 +6,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
-export function Accordions({ arr }: any) {
+export default function Accordions({ arr }: any) {
   const [open, setOpen] = useState(0);
 
   const handleOpen = (value: any) => {
