@@ -29,7 +29,7 @@ const About = () => {
     <div id="about">
       <SectionLayout bg="">
         <h2 className="heading-secondary">Who We Are</h2>
-        <p className="text-base max-w-[700px] mx-auto">
+        <p className="text-base max-w-[700px] mx-auto text-center">
           We are an organisation that unites people from all political parties,
           and none, into one effective anti-EU ground campaign, which is working
           towards winning.

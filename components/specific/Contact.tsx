@@ -12,17 +12,17 @@ let address: {
 
 address = [
   {
-    title: "Tampa Office",
+    title: "USA Office",
     phone: "+1 (321) 765-9177",
     address: "1301 34th ST South, St. Petersburg FL 33711",
-    email: "info@bayshorecommunication.com",
+    email: "info@demo.com",
   },
   {
     title: "Asia Office",
-    phone: "+8801685035449",
+    phone: "+8801612335239",
     address:
-      "Flat : 2nd , House : 21, Road : 1, Block : A, Aftabnogor, Dhaka - 1212",
-    email: "info@bayshorecommunication.com",
+      "Flat : 2nd , House : 21, Road : 1, Block : A, Rampura, Dhaka - 1212",
+    email: "info@demo.com",
   },
 ];
 

@@ -19,12 +19,12 @@ const Form = () => {
         type="tel"
         placeholder="Enter your contact no."
       />
-      <input
+      {/* <input
         className="appearance-none border rounded w-full py-4 px-4 text-gray-700 border-[#CED4DA] leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]"
         id="website"
         type="url"
         placeholder="Enter your website"
-      />
+      /> */}
       <button className="btn mt-4 text-small" type="submit">
         Send Message
       </button>

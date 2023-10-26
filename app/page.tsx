@@ -2,6 +2,7 @@ import SectionLayout from "@/components/common/SectionLayout";
 import Link from "next/link";
 import Contact from "@/components/specific/Contact";
 import About from "@/components/specific/About-Us";
+import CampaignUpcoming from "@/components/specific/CampaignUpcoming";
 
 const page = () => {
   return (
@@ -28,6 +29,7 @@ const page = () => {
         </SectionLayout>
       </div>
       <About />
+      <CampaignUpcoming />
       <Contact />
     </>
   );
