@@ -18,7 +18,7 @@ let linksO: {
 }[];
 
 linksO = [
-  { title: "Home", link: "/" },
+  { title: "Home", link: "#" },
   { title: "About", link: "#about-us" },
   { title: "Service", link: "#" },
   { title: "Growth Plan", link: "#" },

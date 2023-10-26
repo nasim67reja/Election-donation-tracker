@@ -1,7 +1,7 @@
 import SectionLayout from "@/components/common/SectionLayout";
 import Link from "next/link";
 import Contact from "@/components/specific/Contact";
-import About from "@/components/specific/About-Us";
+// import About from "@/components/specific/About-Us";
 
 const page = () => {
   return (
@@ -27,7 +27,7 @@ const page = () => {
           </div>
         </SectionLayout>
       </div>
-      <About />
+      {/* <About /> */}
       <Contact />
     </>
   );
