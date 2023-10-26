@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
+import AOSComponent from "@/components/common/Aos";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Campaign Tracker",
@@ -19,12 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <div className="mt-[8rem] md:mt-[8.5rem] lg:mt-[9.5rem]">
-          {children}
-        </div>
-        <Footer />
+      <body>
+        <AOSComponent>
+          <Navbar />
+          <div className="mt-[7.5rem] md:mt-[7.3rem] lg:mt-[8rem]">
+            {children}
+          </div>
+          <Footer />
+        </AOSComponent>
       </body>
     </html>
   );

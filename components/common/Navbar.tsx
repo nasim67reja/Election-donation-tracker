@@ -24,12 +24,11 @@ linksO = [
   { title: "Growth Plan", link: "#" },
   { title: "Case Studies", link: "#" },
   { title: "Blog", link: "#" },
-  { title: "Contact", link: "#" },
+  { title: "Campaign", link: "#" },
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
-  const splitPath = `/${pathname.split("/")[1]}`;
 
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
@@ -38,10 +37,10 @@ const Navbar = () => {
     else document.documentElement.style.overflow = "auto";
   };
   return (
-    <header className="fixed w-full bg-[#fff] z-50 top-0 left-0 ">
+    <header className="fixed w-full bg-[#fff] z-50 top-0 left-0 shadow-lg">
       {/* Mobile */}
 
-      <nav className="container justify-between gap-12 py-[1.8rem] flex md:hidden">
+      <nav className="container justify-between gap-12 py-[1rem] flex md:hidden">
         <Link href="/">
           <Image
             src="https://shadhinlab.com/wp-content/uploads/2023/09/logo-shadhinlab-2.png.webp"
@@ -61,6 +60,7 @@ const Navbar = () => {
         onClose={toggleDrawer}
         direction="right"
         size={`75vw`}
+        className="!min-h-screen"
       >
         <nav className=" px-[2rem] flex flex-col gap-12 py-[1.8rem] relative">
           <div className="flex justify-between items-center">
@@ -83,11 +83,7 @@ const Navbar = () => {
             <ul className="  md:px-[2rem] flex flex-col md:gap-[2.6rem]">
               {linksO.map((el: { title: string; link: string }, i: number) => (
                 <li
-                  className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center ${
-                    splitPath === el.link
-                      ? "active !text-primary font-bold"
-                      : ""
-                  }`}
+                  className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center `}
                   key={i}
                   onClick={toggleDrawer}
                 >
@@ -104,7 +100,7 @@ const Navbar = () => {
 
       {/* Desktop */}
 
-      <nav className="container  justify-between items-center py-[1rem] hidden md:flex">
+      <nav className="container  justify-between items-center py-[0.8rem]  hidden md:flex">
         <div>
           <Link href="/">
             <Image
@@ -112,7 +108,7 @@ const Navbar = () => {
               alt="shadhin-logo"
               width={366}
               height={106}
-              className="lg:w-[10.6rem] w-[8rem] h-auto"
+              className="lg:w-[9rem] w-[8rem] h-auto"
               priority
             />
           </Link>
@@ -120,19 +116,14 @@ const Navbar = () => {
         <div>
           <ul className="flex items-center justify-center gap-[1.5rem] lg:gap-[2.6rem]">
             {linksO.map((el: { title: string; link: string }, i: number) => (
-              <li
-                className={`text-link ${
-                  splitPath === el.link ? "active !text-primary" : ""
-                }`}
-                key={i}
-              >
+              <li className={`text-link `} key={i}>
                 <Link
                   href={`${el.link}`}
-                  className={`font-semibold hover:border-b-2  ${
-                    splitPath === el.link
-                      ? "hover:border-orange-700"
-                      : "hover:border-blue-gray-500"
-                  }`}
+                  className={`font-semibold hover:border-b-2 ${
+                    el.title === "Campaign"
+                      ? "bg-primary px-8 py-[0.8rem] rounded-sm text-white hover:opacity-80 transition-all"
+                      : ""
+                  } `}
                 >
                   {el.title}
                 </Link>
