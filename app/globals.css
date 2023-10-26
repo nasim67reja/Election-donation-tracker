@@ -12,6 +12,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 /* tailwind class */
 
 .container {
-  @apply max-w-[1650px] mx-auto px-[30px];
+  @apply max-w-[1300px] mx-auto px-[30px];
 }
 .center {
   @apply flex justify-center items-center;
@@ -33,24 +34,24 @@ body {
   @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#343];
 }
 .text-small {
-  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#343] leading-[1.4] text-center  md:text-justify;
+  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#343] leading-[1.4];
 }
 .text-xsmall {
   @apply text-[1.3rem]  text-[#343] leading-[1.4] text-center  md:text-justify;
 }
 .text-base {
-  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%] text-center  md:text-justify text-[#343];
+  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%]   text-[#343];
 }
 .info-text {
   @apply text-[2.2rem] md:text-[3rem]  text-[#fff];
 }
 /* Header */
 .heading-primary {
-  @apply text-[2.8rem] sm:text-[3.4rem]  leading-[3.4rem]  lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[4.8rem] lg:leading-[4.9rem]  font-[700] mb-[1.5rem] md:mb-[2.5rem] text-center md:text-start;
+  @apply text-[2.8rem] sm:text-[3.4rem]  leading-[3.4rem]  lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[4.8rem] lg:leading-[4.9rem]  font-[700] mb-[1.5rem] md:mb-[2.5rem] text-center;
 }
 .heading-secondary {
   /* @apply text-[32px] leading-[38px]  md:text-[43px] lg:text-[48px] lg:leading-[53px] text-headingPrimary font-[700] mb-[2rem]; */
-  @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary mb-[1.8rem] text-center md:text-start;
+  @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary mb-[1.8rem] text-center;
 }
 .heading-tertiary {
   @apply text-headingPrimary font-semibold text-[2rem] md:text-[2rem] lg:text-[2.4rem] mb-[1rem];

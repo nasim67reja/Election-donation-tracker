@@ -13,24 +13,24 @@ let service: {
 }[];
 
 service = [
-  { title: "Website Design", link: "/our-services/website-design" },
-  { title: "Mobile App", link: "/our-services/mobile-app" },
-  { title: "SEO", link: "/our-services/seo-service" },
-  { title: "UI/UX Design", link: "/our-services/ui-ux-design" },
-  { title: "Paid Advertising", link: "/our-services/paid-advertising" },
+  { title: "Website Design", link: "#" },
+  { title: "Mobile App", link: "#" },
+  { title: "SEO", link: "#" },
+  { title: "UI/UX Design", link: "#" },
+  { title: "Paid Advertising", link: "#" },
   {
     title: "Social Media Marketing",
-    link: "/our-services/social-media-marketing",
+    link: "#",
   },
-  { title: "Email Marketing", link: "/our-services/email-marketing" },
-  { title: "Marketing Automation", link: "/our-services/marketing-automation" },
-  { title: "Content Marketing", link: "/our-services/content-marketing" },
-  { title: "Content Writing", link: "/our-services/content-writing" },
-  { title: "Digital PR", link: "/our-services/digital-pr" },
-  { title: "Graphic Design", link: "/our-services/graphic-design" },
-  { title: "Motion Graphic", link: "/our-services/motion-graphic" },
-  { title: "Video Production", link: "/our-services/video-production" },
-  { title: "Influencer Marketing", link: "/our-services/influencer-marketing" },
+  { title: "Email Marketing", link: "#" },
+  { title: "Marketing Automation", link: "#" },
+  { title: "Content Marketing", link: "#" },
+  { title: "Content Writing", link: "#" },
+  { title: "Digital PR", link: "#" },
+  { title: "Graphic Design", link: "#" },
+  { title: "Motion Graphic", link: "#" },
+  { title: "Video Production", link: "#" },
+  { title: "Influencer Marketing", link: "#" },
 ];
 
 let quickLinks: {
@@ -39,13 +39,13 @@ let quickLinks: {
 }[];
 
 quickLinks = [
-  { title: "Appointment", link: "/contact" },
-  { title: "Career", link: "/career" },
-  { title: "Refer Client", link: "/refer-client" },
-  { title: "FAQs", link: "/faq" },
+  { title: "Appointment", link: "#contact" },
+  { title: "Career", link: "#about" },
+  { title: "Refer Client", link: "#refer-client" },
+  { title: "FAQs", link: "#faq" },
   // { title: "Industries We Serve", link: "/industries-we-serve" },
-  { title: "Privacy Policy", link: "/privacy-policy" },
-  { title: "Terms & Conditions", link: "/terms-conditions" },
+  { title: "Privacy Policy", link: "#privacy-policy" },
+  { title: "Terms & Conditions", link: "#terms-conditions" },
 ];
 
 const Col = ({ text, links }: any) => {
@@ -115,10 +115,10 @@ const Footer = () => {
             </p>
           </div>
           <Col text="Service" links={service} />
-          <Col text="More Service" links={service} />
+          {/* <Col text="More Service" links={service} /> */}
           <Col text="Quick links" links={quickLinks} />
 
-          {/* <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
+          <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
             <h4 className="mb-10 heading-four text-center md:text-start ">
               By subscribing we inform about
             </h4>
@@ -130,12 +130,12 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="btn text-small !py-3 flex items-center gap-8 w-max"
+                className="btn text-small !py-3 flex items-center gap-8 w-max !text-white"
               >
                 <span>Get a Proposal</span>
               </button>
             </div>
-          </div> */}
+          </div>
           {/*  */}
         </div>
         <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
@@ -145,33 +145,19 @@ const Footer = () => {
           </p>
           <div className=" flex flex-col items-center  gap-6 pl-8 ">
             <div className="center mt-8 gap-4 ">
-              <Link
-                href={"https://www.facebook.com/bayshorecommunication"}
-                target="_blank"
-              >
+              <Link href={"#"}>
                 <BsFacebook className=" w-[2rem] lg:w-[2.45rem] h-auto  hover:text-[#3b5998] " />
               </Link>
-              <Link
-                href={"https://www.instagram.com/bayshorecommunication"}
-                target="_blank"
-              >
+              <Link href={"#"}>
                 <AiFillInstagram className="w-[2.6rem] lg:w-[2.9rem] h-auto hover:text-[#bb3380]" />
               </Link>
-              <Link
-                href={"https://www.linkedin.com/company/bayshore-communication"}
-                target="_blank"
-              >
+              <Link href={"#"}>
                 <BsLinkedin className="w-[2rem] lg:w-[2.4rem] h-auto hover:text-[#007bb6]" />
               </Link>
-              <Link href={"https://twitter.com/BayshoreCom"} target="_blank">
+              <Link href={"#"}>
                 <AiFillTwitterCircle className="w-[2.6rem] lg:w-[2.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
               </Link>
-              <Link
-                href={
-                  "https://www.youtube.com/channel/UCAaI96cOP7GGpYhEOPFhu8w"
-                }
-                target="_blank"
-              >
+              <Link href={"#"}>
                 <SiYoutubemusic className="w-[2.5rem] lg:w-[2.5rem] h-auto hover:text-[#FF0000]" />
               </Link>
             </div>

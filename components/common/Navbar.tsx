@@ -19,12 +19,12 @@ let linksO: {
 
 linksO = [
   { title: "Home", link: "/" },
-  { title: "About", link: "/about-us" },
-  { title: "Service", link: "/our-services" },
-  { title: "Growth Plan", link: "/growth-plan" },
-  { title: "Case Studies", link: "/case-studies" },
-  { title: "Blog", link: "/blog" },
-  { title: "Contact", link: "/contact" },
+  { title: "About", link: "#about-us" },
+  { title: "Service", link: "#" },
+  { title: "Growth Plan", link: "#" },
+  { title: "Case Studies", link: "#" },
+  { title: "Blog", link: "#" },
+  { title: "Contact", link: "#" },
 ];
 
 const Navbar = () => {
