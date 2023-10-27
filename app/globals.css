@@ -31,16 +31,16 @@ body {
 
 /* Text */
 .text-link {
-  @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#343];
+  @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#333];
 }
 .text-small {
-  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#343] leading-[1.4];
+  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#333] leading-[1.4];
 }
 .text-xsmall {
-  @apply text-[1.3rem]  text-[#343] leading-[1.4] text-center  md:text-justify;
+  @apply text-[1.3rem]  text-[#333] leading-[1.4] text-center  md:text-justify;
 }
 .text-base {
-  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%]   text-[#343];
+  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%]   text-[#333];
 }
 .info-text {
   @apply text-[2.2rem] md:text-[3rem]  text-[#fff];
@@ -88,4 +88,30 @@ body {
 
 .lora {
   font-family: "Lora", serif;
+}
+
+/*  slider */
+
+.slick-list {
+  padding: 0 25px !important;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: blue; /* Change this to your desired color */
+}
+
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 42px;
+  height: 42px;
+}
+.testimonial-slider .slick-prev {
+  left: -80px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: gray !important;
 }
