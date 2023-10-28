@@ -98,7 +98,7 @@ const Footer = () => {
   return (
     <footer>
       <SectionLayout bg="bg-[#f0f7fb]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[25%_18%_18%_39%] xl:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
           <div className="">
             <div className="center md:block">
               <Image
@@ -106,7 +106,7 @@ const Footer = () => {
                 alt="shadhin-logo"
                 width={366}
                 height={106}
-                className="lg:w-[10.6rem] w-[8rem] h-auto"
+                className="lg:w-[10.6rem] w-[8rem] h-auto mb-8"
                 priority
               />
             </div>
@@ -118,19 +118,19 @@ const Footer = () => {
           {/* <Col text="More Service" links={service} /> */}
           <Col text="Quick links" links={quickLinks} />
 
-          <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
+          <div className="flex-1  ">
             <h4 className="mb-10 heading-four text-center md:text-start ">
               By subscribing we inform about
             </h4>
-            <div className="flex flex-col items-center gap-y-4">
+            <div className="flex flex-col items-start gap-y-6">
               <input
-                className="bg-[#eae7e7] py-[0.8rem] px-2 rounded-xl text-[1.3rem] placeholder-center focus:outline-none w-full"
+                className="bg-[#eae7e7] py-[0.8rem] px-2 rounded-xl text-[1.3rem] focus:outline-none w-full"
                 type="text"
                 placeholder="Enter your email"
               />
               <button
                 type="submit"
-                className="btn text-small !py-3 flex items-center gap-8 w-max !text-white"
+                className="btn text-small !py-2 flex items-center gap-8 w-max !text-white hover:opacity-80"
               >
                 <span>Get a Proposal</span>
               </button>
@@ -140,7 +140,7 @@ const Footer = () => {
         </div>
         <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
         <div className="flex flex-wrap justify-center md:justify-between items-center   ">
-          <p className="text-small mt-8 ">
+          <p className="text-small mt-16">
             Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
           </p>
           <div className=" flex flex-col items-center  gap-6 pl-8 ">

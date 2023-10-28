@@ -45,7 +45,8 @@ const About = () => {
         />
         <div className="grid md:grid-cols-2 gap-24 mt-16">
           <div className=" pt-6">
-            <Accordions arr={faq} />
+            {/* <Accordions arr={faq} /> */}
+            faq accordion build but facing some issues on production
           </div>
 
           <div className="">
