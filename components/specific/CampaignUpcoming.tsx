@@ -8,6 +8,7 @@ import { BsCalendar3 } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SectionHeader from "../common/SectionHeader";
 
 const Card = () => {
   return (
@@ -51,13 +52,12 @@ const CampaignUpcoming = () => {
   return (
     <div id="about">
       <SectionLayout bg="">
-        <h2 className="heading-secondary">Upcoming Events</h2>
-        <p className="text-base max-w-[700px] mx-auto text-center">
-          We are pleased to announce the following events our movement’s
-          representatives are <br /> going to participate in.
-        </p>
+        <SectionHeader
+          heading="Upcoming Events"
+          text="We are pleased to announce the following events our movement’s
+          representatives are  going to participate in."
+        />
         <div className=" cards mt-8">
-          {/* <Card /> */}
           <Responsive />
         </div>
       </SectionLayout>

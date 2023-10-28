@@ -7,6 +7,7 @@ import Hero from "@/components/specific/Hero";
 import Stat from "@/components/specific/Stat";
 import News from "@/components/specific/News";
 import Timeline from "@/components/specific/Timeline";
+import Donate from "@/components/specific/Donate";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <About />
       <Stat />
       <CampaignUpcoming />
+      <Donate />
       <Contact />
       <Timeline />
       <News />

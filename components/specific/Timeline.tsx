@@ -29,7 +29,7 @@ const Card = () => {
 const Timeline = () => {
   return (
     <div id="timeline">
-      <SectionLayout bg="">
+      <SectionLayout bg="bg-bgPrimary">
         <SectionHeader
           heading="Political Timeline
 "

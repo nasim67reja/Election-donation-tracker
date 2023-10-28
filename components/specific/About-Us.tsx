@@ -3,6 +3,8 @@ import SectionLayout from "../common/SectionLayout";
 // import Accordions from "./Accordions";
 // import { Accordions } from "./Accordions";
 import Progress from "../common/Progress";
+import Accordions from "./Accordions";
+import SectionHeader from "../common/SectionHeader";
 
 let faq: {
   heading: String;
@@ -28,16 +30,22 @@ const About = () => {
   return (
     <div id="about">
       <SectionLayout bg="">
-        <h2 className="heading-secondary">Who We Are</h2>
-        <p className="text-base max-w-[700px] mx-auto text-center">
+        {/* <h2 className="heading-secondary">Who We Are</h2>
+        <p className="text-small max-w-[700px] mx-auto text-center">
           We are an organisation that unites people from all political parties,
           and none, into one effective anti-EU ground campaign, which is working
           towards winning.
-        </p>
-        <div className="grid md:grid-cols-2 gap-14 mt-16">
+        </p> */}
+
+        <SectionHeader
+          heading="Who We Are"
+          text="We are an organisation that unites people from all political parties,
+          and none, into one effective anti-EU ground campaign, which is working
+          towards winning."
+        />
+        <div className="grid md:grid-cols-2 gap-24 mt-16">
           <div className=" pt-6">
-            faq accordion build but facing some issues on production
-            {/* <Accordions arr={faq} /> */}
+            <Accordions arr={faq} />
           </div>
 
           <div className="">

@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineClockCircle, AiOutlineComment } from "react-icons/ai";
 import { BsCalendar3 } from "react-icons/bs";
 import SectionLayout from "../common/SectionLayout";
+import SectionHeader from "../common/SectionHeader";
 
 const Card = () => {
   return (
@@ -47,13 +48,13 @@ const News = () => {
   return (
     <div id="news">
       <SectionLayout bg="">
-        <h2 className="heading-secondary">Latest Campaign News</h2>
-        <p className="text-base max-w-[700px] mx-auto text-center">
-          The latest news and headlines from the world of politics. Get news and
+        <SectionHeader
+          heading="Latest Campaign News"
+          text="The latest news and headlines from the world of politics. Get news and
           in-
-          <br />
-          depth coverage with videos and photos.
-        </p>
+          depth coverage with videos and photos."
+        />
+
         <div className=" flex justify-center gap-8 mt-8">
           <Card />
           <Card />
