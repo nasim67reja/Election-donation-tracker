@@ -5,6 +5,8 @@ import About from "@/components/specific/About-Us";
 import CampaignUpcoming from "@/components/specific/CampaignUpcoming";
 import Hero from "@/components/specific/Hero";
 import Stat from "@/components/specific/Stat";
+import News from "@/components/specific/News";
+import Timeline from "@/components/specific/Timeline";
 
 const page = () => {
   return (
@@ -14,6 +16,8 @@ const page = () => {
       <Stat />
       <CampaignUpcoming />
       <Contact />
+      <Timeline />
+      <News />
     </>
   );
 };

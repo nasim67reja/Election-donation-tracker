@@ -23,7 +23,7 @@ linksO = [
   { title: "Service", link: "#" },
   { title: "Growth Plan", link: "#" },
   { title: "Case Studies", link: "#" },
-  { title: "Blog", link: "#" },
+  { title: "News", link: "#news" },
   { title: "Campaign", link: "#" },
 ];
 

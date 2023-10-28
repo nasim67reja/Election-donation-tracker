@@ -34,7 +34,7 @@ body {
   @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#333];
 }
 .text-small {
-  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#333] leading-[1.4];
+  @apply text-[13px] text-[#333] leading-[24px];
 }
 .text-xsmall {
   @apply text-[1.3rem]  text-[#333] leading-[1.4] text-center  md:text-justify;
@@ -57,7 +57,7 @@ body {
   @apply text-headingPrimary font-semibold text-[2rem] md:text-[2rem] lg:text-[2.4rem] mb-[1rem];
 }
 .heading-four {
-  @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2] text-center;
+  @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2];
 }
 .heading-five {
   @apply text-headingPrimary font-semibold text-[1.5rem] lg:text-[1.7rem] leading-[1.2] text-center md:text-start;
@@ -114,4 +114,27 @@ body {
 .slick-prev:before,
 .slick-next:before {
   color: gray !important;
+}
+
+/* Timeline */
+.timeline-wraper::before {
+  background: #dedede none repeat scroll 0 0;
+  content: "";
+  height: 95%;
+  left: 50%;
+  margin-left: -0.5px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.timeline-img::before {
+  border-color: transparent #333 transparent transparent;
+  border-style: solid;
+  border-width: 9px;
+  content: "";
+  height: 0;
+  left: -18px;
+  position: absolute;
+  top: 84px;
 }
