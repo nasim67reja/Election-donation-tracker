@@ -116,6 +116,20 @@ body {
   width: 1px;
 }
 
+.timeline-img-right::before {
+  border-color: transparent #333 transparent transparent;
+  border-style: solid;
+  border-width: 9px;
+  content: "";
+  height: 0;
+  left: auto;
+  right: -18px;
+  position: absolute;
+  top: 84px;
+  border-left: 9px solid #333;
+  border-right: 9px solid transparent;
+}
+
 .timeline-img::before {
   border-color: transparent #333 transparent transparent;
   border-style: solid;
