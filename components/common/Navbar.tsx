@@ -119,10 +119,10 @@ const Navbar = () => {
               <li className={`text-link `} key={i}>
                 <Link
                   href={`${el.link}`}
-                  className={`font-semibold hover:border-b-2 border-primary ${
+                  className={`font-semibold  ${
                     el.title === "Campaign"
-                      ? "bg-primary px-8 py-[0.8rem] rounded-sm text-white hover:opacity-80 transition-all hover:border-b-0"
-                      : ""
+                      ? "bg-primary px-8 py-[0.8rem] rounded-sm text-white hover:opacity-80 transition-all "
+                      : "hover:border-b-2 border-primary"
                   } `}
                 >
                   {el.title}

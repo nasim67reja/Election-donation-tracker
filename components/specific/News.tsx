@@ -18,7 +18,7 @@ const Card = () => {
       <div className="py-6 ">
         <div className="px-12 border-b pb-6">
           <h4 className="heading-four mb-4">Lorem Ipsum is simply dummy</h4>
-          <p className="text-base">
+          <p className="text-small">
             This year, in this election, we are called to reaffirm our values
             and our commitments, to hold them against a hard reality and see how
             we are .......
@@ -55,7 +55,7 @@ const News = () => {
           depth coverage with videos and photos."
         />
 
-        <div className=" flex justify-center gap-8 mt-8">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-8 mt-8 justify-items-center">
           <Card />
           <Card />
           <Card />

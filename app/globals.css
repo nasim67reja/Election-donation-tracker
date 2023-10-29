@@ -54,7 +54,7 @@ body {
   @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary mb-[1.8rem] text-center;
 }
 .heading-tertiary {
-  @apply text-headingPrimary font-semibold text-[2rem] md:text-[2rem] lg:text-[2.4rem] mb-[1rem];
+  @apply text-[#333] font-semibold text-[15px] md:text-[16px] lg:text-[18px] mb-[1rem];
 }
 .heading-four {
   @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2];

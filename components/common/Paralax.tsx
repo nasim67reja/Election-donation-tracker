@@ -18,10 +18,10 @@ const Paralax = ({ imgUrl, heading }: any) => {
         />
       </Background>
 
-      <div className="text-white h-[50vh]  relative">
+      <div className="text-white min-h-[400px]  relative">
         <div className="absolute top-0 left-0 z-10 h-full w-full bg-[rgba(0,0,0,0.7)]"></div>
 
-        <div className="absolute top-0 left-0 z-20 h-full w-full py-[5rem]">
+        <div className="absolute top-0 left-0 z-20 h-fit w-full py-[5rem] ">
           <h2 className="max-w-[780px] px-[1rem]  heading-secondary mx-auto !text-white ">
             {heading}
           </h2>
@@ -43,7 +43,7 @@ const Paralax = ({ imgUrl, heading }: any) => {
           <div className="flex items-center justify-center mt-20">
             <button
               type="submit"
-              className="bg-primary text-[15px] font-bold py-5 px-14 flex items-center gap-8 w-max text-white hover:bg-white hover:text-[#333] rounded-sm duration-200"
+              className="bg-primary text-[13px] lg:text-[15px] font-bold py-3 lg:py-5 px-10 lg:px-14 flex items-center gap-8 w-max text-white hover:bg-white hover:text-[#333] rounded-sm duration-200"
             >
               <span>DONATE NOW</span>
             </button>

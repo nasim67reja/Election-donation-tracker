@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="text-[2rem] text-center !text-[#fff] lora"
+            className="text-small text-center !text-[#fff] lora"
           >
             A dedicated platform for election candidates to fund their campaigns
             and make a lasting impact.
@@ -21,7 +21,7 @@ const Hero = () => {
           <button className="mt-[4rem]">
             <Link
               href="#"
-              className="rounded-[5px] py-3 px-8 md:py-6 gap-6 md:px-12 !text-[#fff] text-[14px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold"
+              className="rounded-[5px] py-3 px-8 lg:py-6 gap-6 lg:px-12 !text-[#fff] text-[14px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold"
             >
               <span>Learn More</span>
               <FiChevronDown className="h-[24px] w-[24px] animate-bounce" />
