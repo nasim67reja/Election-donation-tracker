@@ -20,9 +20,9 @@ let linksO: {
 linksO = [
   { title: "Home", link: "#" },
   { title: "About", link: "#about-us" },
-  { title: "Service", link: "#" },
-  { title: "Growth Plan", link: "#" },
-  { title: "Case Studies", link: "#" },
+  { title: "Events", link: "#events" },
+  { title: "Timeline", link: "#timeline" },
+  { title: "Contact Us", link: "#contact-us" },
   { title: "News", link: "#news" },
   { title: "Campaign", link: "#" },
 ];

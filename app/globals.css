@@ -40,7 +40,7 @@ body {
   @apply text-[1.3rem]  text-[#333] leading-[1.4] text-center  md:text-justify;
 }
 .text-base {
-  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%]   text-[#333];
+  @apply text-[16px] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%]   text-[#333];
 }
 .info-text {
   @apply text-[2.2rem] md:text-[3rem]  text-[#fff];
@@ -139,6 +139,19 @@ body {
   left: -18px;
   position: absolute;
   top: 84px;
+}
+
+/* responsive time line card */
+@media (max-width: 1255px) {
+  .timelinecard {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    width: 300px;
+  }
+  .timelinecard img {
+    width: 100% !important;
+  }
 }
 
 /* responsive slider*/

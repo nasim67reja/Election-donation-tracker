@@ -10,7 +10,7 @@ import Button from "../common/Button";
 
 const CampaignUpcoming = () => {
   return (
-    <div id="about">
+    <div id="events">
       <SectionLayout bg="">
         <SectionHeader
           heading="Upcoming Events"

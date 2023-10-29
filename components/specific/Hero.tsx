@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="text-base text-center !text-[#fff] lora"
+            className="text-[16px] md:text-[18px] 2xl:text-[22px] text-center !text-[#fff] lora"
           >
             A dedicated platform for election candidates to fund their campaigns
             and make a lasting impact.
