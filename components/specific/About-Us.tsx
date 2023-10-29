@@ -30,13 +30,6 @@ const About = () => {
   return (
     <div id="about">
       <SectionLayout bg="">
-        {/* <h2 className="heading-secondary">Who We Are</h2>
-        <p className="text-small max-w-[700px] mx-auto text-center">
-          We are an organisation that unites people from all political parties,
-          and none, into one effective anti-EU ground campaign, which is working
-          towards winning.
-        </p> */}
-
         <SectionHeader
           heading="Who We Are"
           text="We are an organisation that unites people from all political parties,
@@ -46,6 +39,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-24 mt-16">
           <div className=" pt-6">
             {/* <Accordions arr={faq} /> */}
+            <Accordions />
             faq accordion build but facing some issues on production
           </div>
 
