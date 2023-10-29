@@ -40,13 +40,13 @@ let quickLinks: {
 }[];
 
 quickLinks = [
-  { title: "Appointment", link: "#contact" },
-  { title: "Career", link: "#about" },
-  { title: "Refer Client", link: "#refer-client" },
-  { title: "FAQs", link: "#faq" },
-  // { title: "Industries We Serve", link: "/industries-we-serve" },
-  { title: "Privacy Policy", link: "#privacy-policy" },
-  { title: "Terms & Conditions", link: "#terms-conditions" },
+  { title: "Home", link: "#" },
+  { title: "About", link: "#about-us" },
+  { title: "Events", link: "#events" },
+  { title: "Timeline", link: "#timeline" },
+  { title: "Contact Us", link: "#contact-us" },
+  { title: "News", link: "#news" },
+  { title: "Campaign", link: "#" },
 ];
 
 const Col = ({ text, links }: any) => {
