@@ -10,7 +10,7 @@ const Card = () => {
   return (
     <div className="border max-w-[370px] card overflow-hidden group cursor-pointer">
       {/* <Image src=""/> */}
-      <div className="h-[260px] overflow-hidden">
+      <div className=" overflow-hidden">
         <img
           src="https://htmldemo.net/polite/polite/img/event/1.jpg"
           alt="women-speaking-on-mic"
