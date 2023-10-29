@@ -1,120 +1,127 @@
 "use client";
+import { useState } from "react";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
-import React from "react";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
-
-export default function DefaultAccordion() {
-  const [open, setOpen] = React.useState(1);
-
-  const handleOpen = (value: any) => setOpen(open === value ? 0 : value);
-
-  return (
-    <>
-      <Accordion open={open === 1}>
-        <AccordionHeader onClick={() => handleOpen(1)}>
-          What is Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 2}>
-        <AccordionHeader onClick={() => handleOpen(2)}>
-          How to use Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 3}>
-        <AccordionHeader onClick={() => handleOpen(3)}>
-          What can I do with Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
-        </AccordionBody>
-      </Accordion>
-    </>
-  );
+interface AccordionProps {
+  title: string;
+  children: React.ReactNode;
+  index: number;
+  activeIndex: number | null;
+  setActiveIndex: (index: number | null) => void;
 }
 
+const Accordion = ({
+  title,
+  children,
+  index,
+  activeIndex,
+  setActiveIndex,
+}: AccordionProps) => {
+  const handleClick = () => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
+  return (
+    <div className="border rounded-md">
+      <button
+        type="button"
+        className={`w-full text-left px-8 py-3  focus:outline-none items-center flex gap-10 items-center1 ${
+          activeIndex === index ? "bg-primary text-white" : "bg-bgPrimary"
+        } `}
+        onClick={handleClick}
+      >
+        <span className="p-2 rounded-full bg-white text-[#333]">
+          {activeIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus />}
+        </span>
+        <span className="text-[13px] xl:text-[15px] font-bold">{title}</span>
+      </button>
+      <div
+        className={`transition-all duration-300 overflow-hidden ${
+          activeIndex === index ? "max-h-screen " : "max-h-0"
+        }`}
+      >
+        <div className="bg-white p-4 text-small">{children}</div>
+      </div>
+    </div>
+  );
+};
+
+const App = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  return (
+    <div className=" flex flex-col gap-8 xl:gap-10">
+      <Accordion
+        title="How it work?"
+        index={0}
+        activeIndex={activeIndex}
+        setActiveIndex={setActiveIndex}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
+        mattis tempor. Aliquam
+      </Accordion>
+      <Accordion
+        title="Do I can use tutorial?"
+        index={1}
+        activeIndex={activeIndex}
+        setActiveIndex={setActiveIndex}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
+        mattis tempor. Aliquam
+      </Accordion>
+      <Accordion
+        title="Do I can use video chat?"
+        index={2}
+        activeIndex={activeIndex}
+        setActiveIndex={setActiveIndex}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
+        mattis tempor. Aliquam
+      </Accordion>
+    </div>
+  );
+};
+
+export default App;
+
 // "use client";
-// import { Fragment, useState } from "react";
-// import {
-//   Accordion,
-//   AccordionHeader,
-//   AccordionBody,
-// } from "@material-tailwind/react";
+// import { useState } from "react";
+// import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
-// export default function Accordions({ arr }: any) {
-//   const [open, setOpen] = useState(0);
-
-//   const handleOpen = (value: any) => {
-//     setOpen(open === value ? 0 : value);
-//   };
-
-//   return (
-//     <Fragment>
-//       {arr.map((el: any, i: number) => (
-//         <div key={el} className="mb-8">
-//           <Accordion
-//             open={open === i + 1}
-//             icon={<Icon id={1 + i} open={open} />}
-//           >
-//             <div
-//               className={`px-8  ${
-//                 open === i + 1 ? "bg-primary" : " bg-bgPrimary"
-//               }`}
-//             >
-//               <AccordionHeader
-//                 className="border-b-0"
-//                 onClick={() => handleOpen(i + 1)}
-//               >
-//                 <div
-//                   className={`text-base ${open === i + 1 ? "!text-white" : ""}`}
-//                 >
-//                   {el.heading}
-//                 </div>
-//               </AccordionHeader>
-//             </div>
-//             <AccordionBody>
-//               <div className="px-8 py-4 border rounded-sm">
-//                 <div className=" text-small">{el.description}</div>
-//               </div>
-//             </AccordionBody>
-//           </Accordion>
-//         </div>
-//       ))}
-//     </Fragment>
-//   );
+// interface AccordionProps {
+//   title: string;
+//   children: React.ReactNode;
 // }
 
-// function Icon({ id, open }: any) {
+// const Accordion = ({ title, children }: AccordionProps) => {
+//   const [isOpen, setIsOpen] = useState(false);
+
 //   return (
-//     <svg
-//       xmlns="http://www.w3.org/2000/svg"
-//       className={`${
-//         id === open ? "rotate-180 text-white" : ""
-//       } h-6 w-6 transition-transform`}
-//       fill="none"
-//       viewBox="0 0 24 24"
-//       stroke="currentColor"
-//       strokeWidth={4}
-//     >
-//       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-//     </svg>
+//     <div className="border rounded-md">
+//       <button
+//         type="button"
+//         className={`w-full text-left px-8 py-2  hover:bg-gray-200 focus:outline-none flex gap-10 items-center1 ${
+//           isOpen ? "bg-primary" : "bg-bgPrimary"
+//         }`}
+//         onClick={() => setIsOpen(!isOpen)}
+//       >
+//         <span className="p-2 rounded-full bg-white">
+//           {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
+//         </span>
+//         <span>{title}</span>
+//       </button>
+//       <div
+//         className={` bg-white transition-all duration-300 overflow-hidden ${
+//           isOpen ? "max-h-screen p-4" : "max-h-0"
+//         }`}
+//       >
+//         {children}
+//       </div>
+//     </div>
 //   );
-// }
+// };
+
+// export default Accordion;

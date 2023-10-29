@@ -1,30 +1,8 @@
 import React from "react";
 import SectionLayout from "../common/SectionLayout";
-// import Accordions from "./Accordions";
-// import { Accordions } from "./Accordions";
 import Progress from "../common/Progress";
-import Accordions from "./Accordions";
 import SectionHeader from "../common/SectionHeader";
-
-let faq: {
-  heading: String;
-  description: String;
-}[];
-
-faq = [
-  {
-    heading: ` How it work?`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam`,
-  },
-  {
-    heading: `Do I can use video chat?`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam`,
-  },
-  {
-    heading: `Do I can use tutorail?`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam`,
-  },
-];
+import App from "./Accordions";
 
 const About = () => {
   return (
@@ -38,14 +16,14 @@ const About = () => {
         />
         <div className="grid md:grid-cols-2 gap-24 mt-16">
           <div className=" pt-6">
-            {/* <Accordions arr={faq} /> */}
-            <Accordions />
-            faq accordion build but facing some issues on production
+            <App />
           </div>
 
           <div className="">
-            <h3 className="heading-tertiary">Where It All Began</h3>
-            <p className="text-small">
+            <h3 className="heading-tertiary text-center md:text-start">
+              Where It All Began
+            </h3>
+            <p className="text-small text-center md:text-start">
               Amnesty International is a global movement of more than 7 million
               people who take injustice personally. We are campaigning for a
               world where human rights are enjoyed by all.

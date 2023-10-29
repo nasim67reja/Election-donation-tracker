@@ -57,7 +57,7 @@ const CampaignUpcoming = () => {
           text="We are pleased to announce the following events our movement’s
           representatives are  going to participate in."
         />
-        <div className=" cards mt-8">
+        <div className="  mt-8">
           <Responsive />
         </div>
       </SectionLayout>
