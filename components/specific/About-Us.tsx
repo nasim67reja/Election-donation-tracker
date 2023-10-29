@@ -14,7 +14,7 @@ const About = () => {
           and none, into one effective anti-EU ground campaign, which is working
           towards winning."
         />
-        <div className="grid md:grid-cols-2 gap-24 mt-16">
+        <div data-aos="fade-up" className="grid md:grid-cols-2 gap-24 mt-16">
           <div className=" pt-6">
             <App />
           </div>

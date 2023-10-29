@@ -54,18 +54,18 @@ body {
   @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary mb-[1.8rem] text-center;
 }
 .heading-tertiary {
-  @apply text-[#333] font-semibold text-[15px] md:text-[16px] lg:text-[18px] mb-[1rem];
+  @apply text-[#333] font-semibold text-[16px] md:text-[18px] lg:text-[22px] mb-[1rem];
 }
 .heading-four {
-  @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2];
+  @apply text-[#333] font-semibold text-[14px] md:text-[16px] lg:text-[18px] leading-[1.2];
 }
 .heading-five {
   @apply text-headingPrimary font-semibold text-[1.5rem] lg:text-[1.7rem] leading-[1.2] text-center md:text-start;
 }
 /* button */
-.btn {
+/* .btn {
   @apply bg-primary  rounded-[10px] px-[20px] py-[6px];
-}
+} */
 
 /* Essential class */
 .backG {
@@ -91,26 +91,14 @@ body {
 }
 
 /*  slider */
-
 .slick-list {
-  padding: 0 25px !important;
+  padding-left: 20px !important;
 }
-
 .slick-prev:hover,
 .slick-next:hover {
   background-color: blue; /* Change this to your desired color */
 }
 
-.slick-slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translatey(-50%);
-  width: 42px;
-  height: 42px;
-}
-.testimonial-slider .slick-prev {
-  left: -80px;
-}
 .slick-prev:before,
 .slick-next:before {
   color: gray !important;
@@ -137,4 +125,39 @@ body {
   left: -18px;
   position: absolute;
   top: 84px;
+}
+
+/* responsive slider*/
+@media (max-width: 1240px) {
+  .card {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 1085px) {
+  .card {
+    max-width: 300px;
+  }
+}
+@media (max-width: 1025px) {
+  .card {
+    max-width: 280px;
+  }
+}
+@media (max-width: 955px) {
+  .card {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 740px) {
+  .card {
+    max-width: 290px;
+  }
 }

@@ -16,9 +16,9 @@ const page = () => {
       <About />
       <Stat />
       <CampaignUpcoming />
-      <Donate />
-      <Contact />
       <Timeline />
+      <Contact />
+      <Donate />
       <News />
     </>
   );

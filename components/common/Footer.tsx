@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { SiYoutubemusic } from "react-icons/si";
+import Button from "./Button";
 
 let service: {
   title: string;
@@ -96,7 +97,7 @@ const Col = ({ text, links }: any) => {
 };
 const Footer = () => {
   return (
-    <footer>
+    <footer data-aos="fade-up">
       <SectionLayout bg="bg-[#f0f7fb]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[25%_18%_18%_39%] xl:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
           <div className="">
@@ -128,12 +129,12 @@ const Footer = () => {
                 type="text"
                 placeholder="Enter your email"
               />
-              <button
+              <Button
                 type="submit"
-                className="btn text-small !py-2 flex items-center gap-8 w-max !text-white hover:opacity-80"
+                className="text-white hover:opacity-80 bg-primary !py-2 !px-6 "
               >
-                <span>Get a Proposal</span>
-              </button>
+                Get a proposal
+              </Button>
             </div>
           </div>
           {/*  */}

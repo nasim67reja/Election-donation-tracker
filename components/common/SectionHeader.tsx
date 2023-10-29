@@ -16,9 +16,16 @@ const SectionHeader = ({ heading, text }: any) => {
   return (
     <div className="mb-[36px]">
       {" "}
-      <h2 className="heading-secondary">{heading}</h2>
+      <h2 data-aos="fade-right" className="heading-secondary">
+        {heading}
+      </h2>
       <Divider />
-      <p className="text-small max-w-[518px] mx-auto text-center">{text}</p>
+      <p
+        data-aos="fade-left"
+        className="text-small max-w-[518px] mx-auto text-center"
+      >
+        {text}
+      </p>
     </div>
   );
 };

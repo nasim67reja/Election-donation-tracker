@@ -2,6 +2,7 @@
 import { BsBookmarkFill } from "react-icons/bs";
 import { Parallax, Background } from "react-parallax";
 import SectionLayout from "./SectionLayout";
+import Button from "./Button";
 
 const Paralax = ({ imgUrl, heading }: any) => {
   return (
@@ -41,12 +42,12 @@ const Paralax = ({ imgUrl, heading }: any) => {
             <Price quantity="$500" />
           </div>
           <div className="flex items-center justify-center mt-20">
-            <button
+            <Button
               type="submit"
-              className="bg-primary text-[13px] lg:text-[15px] font-bold py-3 lg:py-5 px-10 lg:px-14 flex items-center gap-8 w-max text-white hover:bg-white hover:text-[#333] rounded-sm duration-200"
+              className="text-white hover:text-[#333] hover:bg-white bg-primary font-bold uppercase"
             >
-              <span>DONATE NOW</span>
-            </button>
+              Donate Now
+            </Button>
           </div>
         </div>
       </div>

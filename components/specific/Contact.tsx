@@ -1,6 +1,7 @@
 import SectionLayout from "../common/SectionLayout";
 import Image from "next/image";
 import Form from "./Form";
+import SectionHeader from "../common/SectionHeader";
 
 let address: {
   title: string;
@@ -30,7 +31,15 @@ const Contact = () => {
   return (
     <>
       <SectionLayout bg="">
-        <div className="flex flex-wrap justify-center md:justify-between gap-20 ">
+        <SectionHeader
+          heading="Contact Us
+"
+          text=" Have questions or feedback? Reach out to us. We're here to assist you."
+        />
+        <div
+          data-aos="fade-up"
+          className="flex flex-wrap justify-center md:justify-between gap-20 "
+        >
           <div className="md:flex-1 ">
             <Adress
               title="Tampa Office"
@@ -92,7 +101,7 @@ const Row = ({ title, icon, address, phone, email }: any) => {
 const Adress = ({ address, title, phone, email }: any) => {
   return (
     <div className="flex flex-col justify-around items-center">
-      <h3 className="heading-secondary">{title}</h3>
+      <h3 className="heading-tertiary">{title}</h3>
       <div className="flex flex-col gap-3 ">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
         <Row title="Address" icon="/assets/location.svg" address={address} />
