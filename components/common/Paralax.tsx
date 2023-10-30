@@ -23,7 +23,7 @@ const Paralax = ({ imgUrl, heading }: any) => {
         <div className="absolute top-0 left-0 z-10 h-full w-full bg-[rgba(0,0,0,0.7)]"></div>
 
         <div className="absolute top-0 left-0 z-20 h-fit w-full py-[5rem] ">
-          <h2 className="max-w-[780px] px-[1rem]  heading-secondary mx-auto !text-white ">
+          <h2 className="max-w-[780px]  heading-secondary mx-auto !text-white ">
             {heading}
           </h2>
 
@@ -34,7 +34,7 @@ const Paralax = ({ imgUrl, heading }: any) => {
             </span>
             <span className="h-[1px] bg-white w-[40%]"></span>
           </div>
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center gap-8 mt-[4rem]">
             <Price quantity="$100" />
             <Price quantity="$200" />
             <Price quantity="$300" />
@@ -59,7 +59,7 @@ export default Paralax;
 
 const Price = ({ quantity }: any) => {
   return (
-    <button className="mt-[4rem] rounded-[5px] py-3 px-8 md:py-4 gap-6 md:px-16 !text-[#fff] text-[14px] md:text-[18px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold">
+    <button className=" rounded-[5px] py-3 px-8 md:py-4 gap-6 md:px-16 !text-[#fff] text-[14px] md:text-[18px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold">
       <span>{quantity}</span>
     </button>
   );
