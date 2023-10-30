@@ -8,6 +8,7 @@ import Stat from "@/components/specific/Stat";
 import News from "@/components/specific/News";
 import Timeline from "@/components/specific/Timeline";
 import Donate from "@/components/specific/Donate";
+import Clients from "@/components/specific/Our-clients";
 
 const page = () => {
   return (
@@ -17,8 +18,9 @@ const page = () => {
       <Stat />
       <CampaignUpcoming />
       <Timeline />
-      <Contact />
+      <Clients />
       <Donate />
+      <Contact />
       <News />
     </>
   );

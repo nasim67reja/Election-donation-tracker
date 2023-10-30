@@ -30,7 +30,7 @@ address = [
 const Contact = () => {
   return (
     <div id="contact-us">
-      <SectionLayout bg="">
+      <SectionLayout bg="bg-bgPrimary">
         <SectionHeader
           heading="Contact Us
 "

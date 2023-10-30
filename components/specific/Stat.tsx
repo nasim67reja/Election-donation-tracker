@@ -6,7 +6,7 @@ const El = ({ imglink, num, text }: any) => {
   return (
     <div className="flex flex-col gap-2 md:gap-4 items-center mb-8 md:mb-0">
       <div className="flex flex-col items-center gap-2">
-        <img src={imglink} alt="" className="w-[10rem] h-auto" />
+        <img src={imglink} alt="" className="w-[10rem] lg:w-[15rem] h-auto" />
         <p className="text-[13px] md:text-[15px] font-medium uppercase">
           {text}
         </p>
