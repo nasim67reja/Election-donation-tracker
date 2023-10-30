@@ -89,6 +89,20 @@ body {
   font-family: "Lora", serif;
 }
 
+/* accordion */
+.transition {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  will-change: max-height;
+}
+
+.transition-active {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+  will-change: max-height;
+}
+
 /*  slider */
 .slick-list {
   margin-left: 20px !important;

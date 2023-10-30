@@ -25,7 +25,7 @@ const Accordion = ({
     <div className="border rounded-md">
       <button
         type="button"
-        className={`w-full text-left px-8 py-3  focus:outline-none items-center flex gap-10 items-center1 ${
+        className={`w-full text-left px-8 py-3 focus:outline-none items-center flex gap-10 items-center1 ${
           activeIndex === index ? "bg-primary text-white" : "bg-bgPrimary"
         } `}
         onClick={handleClick}
@@ -37,7 +37,7 @@ const Accordion = ({
       </button>
       <div
         className={`transition-all duration-300 overflow-hidden ${
-          activeIndex === index ? "max-h-screen " : "max-h-0"
+          activeIndex === index ? "transition-active" : "transition"
         }`}
       >
         <div className="bg-white p-4 text-small">{children}</div>
@@ -86,42 +86,3 @@ const App = () => {
 };
 
 export default App;
-
-// "use client";
-// import { useState } from "react";
-// import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-
-// interface AccordionProps {
-//   title: string;
-//   children: React.ReactNode;
-// }
-
-// const Accordion = ({ title, children }: AccordionProps) => {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   return (
-//     <div className="border rounded-md">
-//       <button
-//         type="button"
-//         className={`w-full text-left px-8 py-2  hover:bg-gray-200 focus:outline-none flex gap-10 items-center1 ${
-//           isOpen ? "bg-primary" : "bg-bgPrimary"
-//         }`}
-//         onClick={() => setIsOpen(!isOpen)}
-//       >
-//         <span className="p-2 rounded-full bg-white">
-//           {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
-//         </span>
-//         <span>{title}</span>
-//       </button>
-//       <div
-//         className={` bg-white transition-all duration-300 overflow-hidden ${
-//           isOpen ? "max-h-screen p-4" : "max-h-0"
-//         }`}
-//       >
-//         {children}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Accordion;
