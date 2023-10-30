@@ -6,7 +6,7 @@ import Link from "next/link";
 const Card = () => {
   return (
     <>
-      <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] ">
+      <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] font-semibold">
         Oct 2023
       </p>
       <div className="timelinecard grid grid-cols-[40%_60%] border">
@@ -41,7 +41,7 @@ const Card = () => {
 const CardRight = () => {
   return (
     <>
-      <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] ">
+      <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] font-semibold">
         Oct 2023
       </p>
       <div className="timelinecard grid grid-cols-[60%_40%] border">
@@ -99,7 +99,8 @@ const Timeline = () => {
           </div>
         </div>
 
-        <div className="md:hidden flex flex-col items-center gap-12">
+        {/* Mobile */}
+        <div className="md:hidden flex flex-col items-center gap-8">
           <Card />
           <CardRight />
           <Card />

@@ -143,10 +143,11 @@ const Footer = () => {
       <div className="w-full  h-[1px] bg-[#DBDBDB]"></div>
       <div className="bg-[#f0f7fb]">
         <div className="max-w-[1300px]  mx-auto px-[30px] py-8">
-          <div className="flex flex-wrap justify-center md:justify-between items-center   ">
+          <div className="flex flex-wrap justify-center md:justify-between items-center gap-4  ">
             <p className="text-small text-center md:text-start">
               Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
             </p>
+
             <div className=" flex flex-col items-center  gap-6">
               <div className="center  gap-4 ">
                 <Link href={"#"}>

@@ -64,7 +64,7 @@ const ResponsiveSlider: React.FC = () => {
         },
       },
       {
-        breakpoint: 690,
+        breakpoint: 590,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
