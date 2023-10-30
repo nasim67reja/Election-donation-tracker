@@ -48,15 +48,6 @@ const Contact = () => {
               email={address[0].email}
             />
           </div>
-
-          <div className="md:flex-1 ">
-            <Adress
-              title="Asia Office"
-              address={address[1].address}
-              phone={address[1].phone}
-              email={address[1].email}
-            />
-          </div>
           <div className="md:flex-[2]">
             <div className=" mx-auto">
               <h4 className="heading-four !text-center">
@@ -65,6 +56,14 @@ const Contact = () => {
               </h4>
               <Form />
             </div>
+          </div>
+          <div className="md:flex-1 ">
+            <Adress
+              title="Asia Office"
+              address={address[1].address}
+              phone={address[1].phone}
+              email={address[1].email}
+            />
           </div>
         </div>
       </SectionLayout>

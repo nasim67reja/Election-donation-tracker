@@ -139,13 +139,15 @@ const Footer = () => {
           </div>
           {/*  */}
         </div>
-        <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
+      </SectionLayout>
+      <div className="w-full  h-[1px] bg-[#DBDBDB]"></div>
+      <div className="max-w-[1300px] bg-[#f0f7fb] mx-auto px-[30px] py-8">
         <div className="flex flex-wrap justify-center md:justify-between items-center   ">
-          <p className="text-small mt-16">
+          <p className="text-small">
             Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
           </p>
-          <div className=" flex flex-col items-center  gap-6 pl-8 ">
-            <div className="center mt-8 gap-4 ">
+          <div className=" flex flex-col items-center  gap-6">
+            <div className="center  gap-4 ">
               <Link href={"#"}>
                 <BsFacebook className=" w-[2rem] lg:w-[2.45rem] h-auto  hover:text-[#3b5998] " />
               </Link>
@@ -164,7 +166,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
+      </div>
     </footer>
   );
 };
