@@ -9,10 +9,7 @@ const Card = () => {
       <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] ">
         Oct 2023
       </p>
-      <div
-        data-aos="fade-left"
-        className="timelinecard grid grid-cols-[40%_60%] border"
-      >
+      <div className="timelinecard grid grid-cols-[40%_60%] border">
         <Link href="#" className="relative timeline-img w-full">
           <p className="hidden md:block absolute text-[#727272] leading-[14px] text-[15px] top-[86px] left-[-125px]">
             Oct 2023
@@ -47,10 +44,7 @@ const CardRight = () => {
       <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] ">
         Oct 2023
       </p>
-      <div
-        data-aos="fade-right"
-        className="timelinecard grid grid-cols-[60%_40%] border"
-      >
+      <div className="timelinecard grid grid-cols-[60%_40%] border">
         <div className="flex flex-col items-center px-3 py-2 md:px-8 md:py-6 mt-6">
           <h4 className="heading-four mb-6 md:mb-[1.9rem]">
             Clinton's big worry
@@ -82,7 +76,7 @@ const CardRight = () => {
 
 const Timeline = () => {
   return (
-    <div id="timeline">
+    <div data-aos="fade-up" id="timeline">
       <SectionLayout bg="bg-bgPrimary">
         <SectionHeader
           heading="Political Timeline

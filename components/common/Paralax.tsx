@@ -34,7 +34,7 @@ const Paralax = ({ imgUrl, heading }: any) => {
             </span>
             <span className="h-[1px] bg-white w-[40%]"></span>
           </div>
-          <div className="flex items-center justify-center gap-8 mt-[4rem]">
+          <div className="flex items-center justify-center gap-4 md:gap-8 mt-[4rem]">
             <Price quantity="$100" />
             <Price quantity="$200" />
             <Price quantity="$300" />
@@ -59,7 +59,7 @@ export default Paralax;
 
 const Price = ({ quantity }: any) => {
   return (
-    <button className=" rounded-sm py-2 px-4 sm:px-6 md:py-3 gap-6 md:px-16 !text-[#fff] text-[14px] md:text-[18px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold">
+    <button className=" rounded-sm py-2 px-4 sm:px-6 md:py-3 gap-6 md:px-16 !text-[#fff] text-[12px] sm:text-[14px] md:text-[18px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold">
       <span>{quantity}</span>
     </button>
   );
