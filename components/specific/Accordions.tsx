@@ -52,34 +52,36 @@ const App = () => {
   return (
     <div className=" flex flex-col gap-8 xl:gap-10">
       <Accordion
-        title="How it work?"
+        title="What sets Shadhin Lab apart from others?"
         index={0}
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-        mattis tempor. Aliquam
+        Shadhin Lab stands out for its commitment to transparency,
+        accessibility, and community engagement. We prioritize creating a
+        political landscape where every candidate can be heard and supported.
       </Accordion>
       <Accordion
-        title="Do I can use tutorial?"
+        title="How can I get involved with Shadhin Lab?"
         index={1}
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-        mattis tempor. Aliquam
+        You can get involved by exploring campaigns, supporting candidates, or
+        even considering running for office. Connect with us on social media,
+        attend campaign events, and be a part of the movement to shape a better
+        future.
       </Accordion>
       <Accordion
-        title="Do I can use video chat?"
+        title="What kind of candidates use Shadhin Lab?"
         index={2}
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel
-        mattis tempor. Aliquam
+        Shadhin Lab welcomes candidates from various backgrounds, affiliations,
+        and levels of experience. Whether you're a seasoned politician or a
+        newcomer, our platform is designed to support candidates who are
+        passionate about making a positive impact
       </Accordion>
     </div>
   );
