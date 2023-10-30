@@ -53,7 +53,7 @@ const Col = ({ text, links }: any) => {
   return (
     <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
       <h4 className="mb-10 heading-four text-center md:text-start ">{text}</h4>
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 items-center md:items-start">
         {links.map((el: any, i: number) => {
           if (text === "Service") {
             if (i < links.length / 2) {
@@ -111,7 +111,7 @@ const Footer = () => {
                 priority
               />
             </div>
-            <p className="text-small  leading-[1.3] px-[2vw]  sm:px-0 ">
+            <p className="text-small text-center md:text-start  leading-[1.3] px-[2vw]  sm:px-0 ">
               {text}
             </p>
           </div>
@@ -123,9 +123,9 @@ const Footer = () => {
             <h4 className="mb-10 heading-four text-center md:text-start ">
               By subscribing we inform about
             </h4>
-            <div className="flex flex-col items-start gap-y-6">
+            <div className="flex flex-col items-center md:items-start gap-y-6">
               <input
-                className="bg-[#eae7e7] py-[0.8rem] px-2 rounded-xl text-[1.3rem] focus:outline-none w-full"
+                className="bg-[#eae7e7] py-[0.8rem] px-6 rounded-sm text-[1.3rem] focus:outline-none w-full"
                 type="text"
                 placeholder="Enter your email"
               />
@@ -141,28 +141,30 @@ const Footer = () => {
         </div>
       </SectionLayout>
       <div className="w-full  h-[1px] bg-[#DBDBDB]"></div>
-      <div className="max-w-[1300px] bg-[#f0f7fb] mx-auto px-[30px] py-8">
-        <div className="flex flex-wrap justify-center md:justify-between items-center   ">
-          <p className="text-small">
-            Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
-          </p>
-          <div className=" flex flex-col items-center  gap-6">
-            <div className="center  gap-4 ">
-              <Link href={"#"}>
-                <BsFacebook className=" w-[2rem] lg:w-[2.45rem] h-auto  hover:text-[#3b5998] " />
-              </Link>
-              <Link href={"#"}>
-                <AiFillInstagram className="w-[2.6rem] lg:w-[2.9rem] h-auto hover:text-[#bb3380]" />
-              </Link>
-              <Link href={"#"}>
-                <BsLinkedin className="w-[2rem] lg:w-[2.4rem] h-auto hover:text-[#007bb6]" />
-              </Link>
-              <Link href={"#"}>
-                <AiFillTwitterCircle className="w-[2.6rem] lg:w-[2.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
-              </Link>
-              <Link href={"#"}>
-                <SiYoutubemusic className="w-[2.5rem] lg:w-[2.5rem] h-auto hover:text-[#FF0000]" />
-              </Link>
+      <div className="bg-[#f0f7fb]">
+        <div className="max-w-[1300px]  mx-auto px-[30px] py-8">
+          <div className="flex flex-wrap justify-center md:justify-between items-center   ">
+            <p className="text-small">
+              Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
+            </p>
+            <div className=" flex flex-col items-center  gap-6">
+              <div className="center  gap-4 ">
+                <Link href={"#"}>
+                  <BsFacebook className=" w-[2rem] lg:w-[2.45rem] h-auto  hover:text-[#3b5998] " />
+                </Link>
+                <Link href={"#"}>
+                  <AiFillInstagram className="w-[2.6rem] lg:w-[2.9rem] h-auto hover:text-[#bb3380]" />
+                </Link>
+                <Link href={"#"}>
+                  <BsLinkedin className="w-[2rem] lg:w-[2.4rem] h-auto hover:text-[#007bb6]" />
+                </Link>
+                <Link href={"#"}>
+                  <AiFillTwitterCircle className="w-[2.6rem] lg:w-[2.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
+                </Link>
+                <Link href={"#"}>
+                  <SiYoutubemusic className="w-[2.5rem] lg:w-[2.5rem] h-auto hover:text-[#FF0000]" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

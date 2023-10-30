@@ -19,7 +19,7 @@ const Paralax = ({ imgUrl, heading }: any) => {
         />
       </Background>
 
-      <div className="text-white min-h-[400px]  relative">
+      <div className="text-white min-h-[320px] md:min-h-[400px]  relative">
         <div className="absolute top-0 left-0 z-10 h-full w-full bg-[rgba(0,0,0,0.7)]"></div>
 
         <div className="absolute top-0 left-0 z-20 h-fit w-full py-[5rem] ">
@@ -27,7 +27,7 @@ const Paralax = ({ imgUrl, heading }: any) => {
             {heading}
           </h2>
 
-          <div className=" flex items-center max-w-[318px] mx-auto gap-4 mb-[2rem]">
+          <div className=" flex items-center max-w-[318px] mx-auto gap-4 my-[1.8rem]">
             <span className="h-[1px] bg-white w-[40%]"></span>
             <span>
               <BsBookmarkFill className="text-white" />
@@ -59,7 +59,7 @@ export default Paralax;
 
 const Price = ({ quantity }: any) => {
   return (
-    <button className=" rounded-[5px] py-3 px-8 md:py-4 gap-6 md:px-16 !text-[#fff] text-[14px] md:text-[18px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold">
+    <button className=" rounded-sm py-2 px-4 sm:px-6 md:py-3 gap-6 md:px-16 !text-[#fff] text-[14px] md:text-[18px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold">
       <span>{quantity}</span>
     </button>
   );
