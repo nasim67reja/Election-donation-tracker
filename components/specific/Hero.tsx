@@ -5,7 +5,7 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <div className="backG min-h-[60vh] xl:min-h-[80vh] flex justify-center items-center">
+    <div className="backG min-h-[60vh] xl:min-h-[90vh] flex justify-center items-center">
       <SectionLayout bg="">
         <div className=" flex flex-col justify-center items-center">
           <h1 data-aos="zoom-in" className="heading-primary text-[#fff] lora ">

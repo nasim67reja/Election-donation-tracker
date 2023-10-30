@@ -54,7 +54,7 @@ body {
   @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary  text-center;
 }
 .heading-tertiary {
-  @apply text-[#333] font-semibold text-[16px] md:text-[18px] lg:text-[22px] mb-[1rem];
+  @apply text-[#333] font-semibold text-[16px] md:text-[18px] lg:text-[22px];
 }
 .heading-four {
   @apply text-[#333] font-semibold text-[14px] md:text-[16px] lg:text-[18px] leading-[1.2];
@@ -69,18 +69,18 @@ body {
 
 /* Essential class */
 .backG {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/test.jpg");
-  /* background-image: linear-gradient(
+    url("/test.jpg"); */
+  background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
     ),
-    url("https://htmldemo.net/polite/polite/img/slider/1.jpg"); */
+    url("https://htmldemo.net/polite/polite/img/slider/4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

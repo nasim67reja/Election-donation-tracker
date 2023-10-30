@@ -75,23 +75,23 @@ export default Contact;
 
 const Row = ({ title, icon, address, phone, email }: any) => {
   return (
-    <div className="flex flex-col items-center">
-      <h4 className="heading-four mb-2 flex items-center gap-4">
+    <div className="flex flex-col items-center ">
+      <h4 className="heading-four mb-1 flex items-center gap-4">
         <span>
           <Image
             src={icon}
             alt="contact-office"
             width={600}
             height={80}
-            className="w-[2rem] h-auto object-cover"
+            className="w-[1.8rem] h-auto object-cover"
           />
         </span>
         <span>{title}</span>
       </h4>
-      <div className="mb-[1rem]">
-        <p className="text-small !text-center">{phone}</p>
-        <p className="text-small !text-center">{address}</p>
-        <p className="text-small !text-center">{email}</p>
+      <div>
+        <p className="text-small text-center">{phone}</p>
+        <p className="text-small !leading-[1.4] text-center">{address}</p>
+        <p className="text-small text-center">{email}</p>
       </div>
     </div>
   );
@@ -100,8 +100,8 @@ const Row = ({ title, icon, address, phone, email }: any) => {
 const Adress = ({ address, title, phone, email }: any) => {
   return (
     <div className="flex flex-col justify-around items-center">
-      <h3 className="heading-tertiary">{title}</h3>
-      <div className="flex flex-col gap-3 ">
+      <h3 className="heading-tertiary mb-10">{title}</h3>
+      <div className="flex flex-col gap-8 ">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
         <Row title="Address" icon="/assets/location.svg" address={address} />
         <Row title="Email" icon="/assets/email.svg" email={email} />

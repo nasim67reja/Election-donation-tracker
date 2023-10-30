@@ -8,15 +8,15 @@ const Card = () => {
   return (
     <div className="border max-w-[370px] overflow-hidden group cursor-pointer">
       {/* <Image src=""/> */}
-      <div className="h-[260px] overflow-hidden">
+      <div className=" overflow-hidden">
         <img
           src="https://htmldemo.net/polite/polite/img/blog/4.jpg"
           alt="women-speaking-on-mic"
           className="duration-300 group-hover:scale-125"
         />
       </div>
-      <div className="py-6 ">
-        <div className="px-12 border-b pb-6">
+      <div className="py-4 md:py-6 px-10 md:px-12">
+        <div className=" border-b pb-4 md:pb-6">
           <h4 className="heading-four mb-4">Lorem Ipsum is simply dummy</h4>
           <p className="text-small">
             This year, in this election, we are called to reaffirm our values
@@ -25,7 +25,7 @@ const Card = () => {
           </p>
         </div>
 
-        <div className="flex gap-6 text-small justify-between px-12 pt-6">
+        <div className="flex gap-6 text-small justify-between pt-4 md:pt-6">
           <div className="flex gap-4 items-center ">
             <span>
               <BsCalendar3 />
@@ -57,7 +57,7 @@ const News = () => {
 
         <div
           data-aos="fade-up"
-          className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-8 mt-8 justify-items-center"
+          className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-8  justify-items-center"
         >
           <Card />
           <Card />
