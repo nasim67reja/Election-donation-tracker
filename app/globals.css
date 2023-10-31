@@ -17,7 +17,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Raleway", sans-serif;
 }
 
 /* tailwind class */
@@ -88,7 +87,16 @@ body {
 .lora {
   font-family: "Lora", serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span {
+  font-family: "Raleway", sans-serif;
+}
 /* accordion */
 .transition {
   max-height: 0;
