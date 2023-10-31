@@ -87,7 +87,10 @@ body {
 .lora {
   font-family: "Lora", serif;
 }
-h1,
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+/* h1,
 h2,
 h3,
 h4,
@@ -95,8 +98,8 @@ h5,
 p,
 a,
 span {
-  font-family: "Raleway";
-}
+  font-family: "Raleway", sans-serif;
+} */
 /* accordion */
 .transition {
   max-height: 0;

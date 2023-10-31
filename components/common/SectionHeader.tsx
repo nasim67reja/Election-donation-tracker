@@ -16,13 +16,13 @@ const SectionHeader = ({ heading, text }: any) => {
   return (
     <div className="mb-[36px]">
       {" "}
-      <h2 data-aos="zoom-in-down" className="heading-secondary">
+      <h2 data-aos="zoom-in-down" className="heading-secondary raleway">
         {heading}
       </h2>
       <Divider />
       <p
         data-aos="fade-up"
-        className="text-small max-w-[518px] mx-auto text-center"
+        className="text-small max-w-[518px] mx-auto text-center raleway"
       >
         {text}
       </p>

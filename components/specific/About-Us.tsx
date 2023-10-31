@@ -20,10 +20,10 @@ const About = () => {
           </div>
 
           <div className="">
-            <h3 className="heading-tertiary text-center md:text-start">
+            <h3 className="heading-tertiary text-center md:text-start ">
               Where It All Began
             </h3>
-            <p className="text-small text-center md:text-start">
+            <p className="text-small text-center md:text-start ">
               Amnesty International is a global movement of more than 7 million
               people who take injustice personally. We are campaigning for a
               world where human rights are enjoyed by all.
