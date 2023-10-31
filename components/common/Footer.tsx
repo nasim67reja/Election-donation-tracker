@@ -3,10 +3,17 @@ import React from "react";
 import SectionLayout from "./SectionLayout";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFacebook, BsLinkedin } from "react-icons/bs";
-import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
+import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
+import {
+  AiFillInstagram,
+  AiFillTwitterCircle,
+  AiOutlineTwitter,
+  AiOutlineYoutube,
+} from "react-icons/ai";
 import { SiYoutubemusic } from "react-icons/si";
 import Button from "./Button";
+import { FaTwitterSquare } from "react-icons/fa";
+import { GrFacebook } from "react-icons/gr";
 
 let service: {
   title: string;
@@ -51,7 +58,7 @@ quickLinks = [
 
 const Col = ({ text, links }: any) => {
   return (
-    <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
+    <div className="flex-1  ">
       <h4 className="mb-10 heading-four text-center md:text-start ">{text}</h4>
       <ul className="flex flex-col gap-2 items-center md:items-start">
         {links.map((el: any, i: number) => {
@@ -100,7 +107,7 @@ const Footer = () => {
   return (
     <footer data-aos="fade-up">
       <SectionLayout bg="bg-[#f0f7fb]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[31%_15%_15%_39%] xl:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[31%_15%_15%_35%] xl:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
           <div className="">
             <div className="center md:block">
               <Image
@@ -115,7 +122,19 @@ const Footer = () => {
             <p className="text-small text-center md:text-start  leading-[1.3] px-[2vw]  sm:px-0 ">
               {text}
             </p>
+            <div className="mt-[4rem] flex items-center gap-6">
+              <Link href={"#"}>
+                <BsLinkedin className="w-[2rem] lg:w-[2.4rem] h-auto text-primary hover:opacity-80" />
+              </Link>
+              <Link href={"#"}>
+                <GrFacebook className="w-[1.8rem] lg:w-[2.3rem] h-auto text-primary hover:opacity-80" />
+              </Link>
+              <Link href={"#"}>
+                <FaTwitterSquare className="w-[1.8rem] lg:w-[2.6rem] h-auto text-primary hover:opacity-80" />
+              </Link>
+            </div>
           </div>
+
           <Col text="Service" links={service} />
           {/* <Col text="More Service" links={service} /> */}
           <Col text="Quick links" links={quickLinks} />
@@ -130,13 +149,13 @@ const Footer = () => {
             </p>
             <div className="flex flex-col items-center md:items-start gap-y-6">
               <input
-                className="bg-[#eae7e7] py-[0.8rem] px-6 rounded-sm text-[1.3rem] focus:outline-none w-full"
-                type="text"
+                className=" py-[0.8rem] px-6 rounded-sm text-[1.3rem] focus:outline-primary w-full"
+                type="email"
                 placeholder="Enter your email"
               />
               <Button
                 type="submit"
-                className="text-white hover:opacity-80 bg-primary !py-2 !px-6 "
+                className="text-white hover:opacity-80 bg-primary !py-[8px] !px-6 "
               >
                 Get a proposal
               </Button>
@@ -148,31 +167,9 @@ const Footer = () => {
       <div className="w-full  h-[1px] bg-[#DBDBDB]"></div>
       <div className="bg-[#f0f7fb]">
         <div className="max-w-[1300px]  mx-auto px-[30px] py-8">
-          <div className="flex flex-wrap justify-center md:justify-between items-center gap-4  ">
-            <p className="text-small text-center md:text-start">
-              Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
-            </p>
-
-            <div className=" flex flex-col items-center  gap-6">
-              <div className="center  gap-4 ">
-                <Link href={"#"}>
-                  <BsFacebook className=" w-[2rem] lg:w-[2.45rem] h-auto  hover:text-[#3b5998] " />
-                </Link>
-                <Link href={"#"}>
-                  <AiFillInstagram className="w-[2.6rem] lg:w-[2.9rem] h-auto hover:text-[#bb3380]" />
-                </Link>
-                <Link href={"#"}>
-                  <BsLinkedin className="w-[2rem] lg:w-[2.4rem] h-auto hover:text-[#007bb6]" />
-                </Link>
-                <Link href={"#"}>
-                  <AiFillTwitterCircle className="w-[2.6rem] lg:w-[2.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
-                </Link>
-                <Link href={"#"}>
-                  <SiYoutubemusic className="w-[2.5rem] lg:w-[2.5rem] h-auto hover:text-[#FF0000]" />
-                </Link>
-              </div>
-            </div>
-          </div>
+          <p className="text-small text-center ">
+            Copyright © 2023 All Rights Reserved by Shadhin Lab LLC.
+          </p>
         </div>
       </div>
     </footer>

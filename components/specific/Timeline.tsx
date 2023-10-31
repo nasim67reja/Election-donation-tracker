@@ -9,7 +9,7 @@ const Card = () => {
       <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] font-semibold">
         Oct 2023
       </p>
-      <div className="timelinecard grid grid-cols-[40%_57%] gap-[3%] border">
+      <div className="timelinecard grid grid-cols-[40%_57%] gap-[3%] border bg-white">
         <Link href="#" className="relative timeline-img w-full">
           <p className="hidden md:block absolute text-[#727272] leading-[14px] text-[15px] top-[86px] left-[-125px]">
             Oct 2023
@@ -21,11 +21,11 @@ const Card = () => {
             className="w-full h-auto"
           />
         </Link>
-        <div className="flex flex-col md:items-start items-center px-3 py-2 md:px-8 md:py-6">
+        <div className="flex flex-col md:items-start items-center px-3 md:pt-[2rem] pb-2 md:px-8 md:py-6">
           <h4 className="heading-four mb-6 md:mb-[1.9rem]">
             Clinton's big worry
           </h4>
-          <p className="text-small !text-[#727272] text-center md:text-justify mb-2 md:mb-[1.6rem]">
+          <p className="text-small !text-[#727272] text-center md:text-justify mb-2 md:mb-[1.9rem]">
             However, he noted ISIS terrorists in Syria still have "the ability
             to appeal to troubled souls" online and said the number of open
           </p>
@@ -44,12 +44,12 @@ const CardRight = () => {
       <p className="md:hidden block  text-[#727272] leading-[14px] text-[15px] font-semibold">
         Oct 2023
       </p>
-      <div className="timelinecard grid grid-cols-[57%_40%] gap-[3%] border">
-        <div className="flex flex-col md:items-start items-center px-3 py-2 md:px-8 md:py-6 mt-6">
+      <div className="timelinecard grid grid-cols-[57%_40%] gap-[3%] border bg-white">
+        <div className="flex flex-col md:items-start items-center px-3 md:pt-[2rem] pb-2 md:px-8 md:py-6">
           <h4 className="heading-four mb-6 md:mb-[1.9rem]">
             Clinton's big worry
           </h4>
-          <p className="text-small !text-[#727272] text-center md:text-justify mb-2 md:mb-[1.6rem]">
+          <p className="text-small !text-[#727272] text-center md:text-justify mb-2 md:mb-[1.9rem]">
             However, he noted ISIS terrorists in Syria still have "the ability
             to appeal to troubled souls" online and said the number of open
           </p>

@@ -28,7 +28,7 @@ const Hero = () => {
               className="rounded-[5px] py-3 px-8 lg:py-6 gap-4 lg:px-12 !text-[#fff] text-[14px] border border-whtie duration-200 hover:bg-primary   hover:border-primary flex justify-between items-center  font-bold"
             >
               <span className={lora.className}>Learn More</span>
-              <span className="translate-y-1">
+              <span className="translate-y-[2.6px]">
                 <FiChevronDown className="h-[24px] w-[24px] animate-bounce " />
               </span>
             </Link>

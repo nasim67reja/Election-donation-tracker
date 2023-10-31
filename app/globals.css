@@ -31,7 +31,7 @@ body {
   @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#333];
 }
 .text-small {
-  @apply text-[13px] text-[#333] leading-[24px];
+  @apply text-[13px] md:text-[14px] text-[#333] leading-[24px];
 }
 .text-xsmall {
   @apply text-[1.3rem]  text-[#333] leading-[1.4] text-center  md:text-justify;
@@ -47,10 +47,10 @@ body {
   @apply text-[3rem] sm:text-[4rem] md:text-[5rem] xl:text-[6.5rem] font-semibold leading-[1.1] mb-8   text-center;
 }
 .heading-secondary {
-  @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary  text-center;
+  @apply text-[18px] sm:text-[20px] md:text-[35px]  xl:text-[40px] font-[600] text-headingPrimary  text-center;
 }
 .heading-tertiary {
-  @apply text-[#333] font-semibold text-[16px] md:text-[18px] lg:text-[22px];
+  @apply text-[#333] font-semibold text-[16px] md:text-[22px] lg:text-[28px];
 }
 .heading-four {
   @apply text-[#333] font-semibold text-[14px] md:text-[16px] lg:text-[18px] leading-[1.2];
@@ -82,22 +82,6 @@ body {
   background-size: cover;
 }
 
-/* .lora {
-  font-family: "Lora", serif;
-} */
-/* .raleway {
-  font-family: "Raleway", sans-serif;
-} */
-/* h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a,
-span {
-  font-family: "Raleway", sans-serif;
-} */
 /* accordion */
 .transition {
   max-height: 0;

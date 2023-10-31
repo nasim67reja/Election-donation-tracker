@@ -15,8 +15,8 @@ const Card = () => {
           className="duration-300 group-hover:scale-125"
         />
       </div>
-      <div className="py-4 md:py-6 px-10 md:px-12">
-        <div className=" border-b pb-4 md:pb-6">
+      <div className="">
+        <div className=" border-b py-4 md:py-6 px-10 md:px-12">
           <h4 className="heading-four mb-4">Lorem Ipsum is simply dummy</h4>
           <p className="text-small">
             This year, in this election, we are called to reaffirm our values
@@ -25,16 +25,16 @@ const Card = () => {
           </p>
         </div>
 
-        <div className="flex gap-6 text-small justify-between pt-4 md:pt-6">
+        <div className="flex gap-6 text-small justify-between py-4 md:py-6 px-10 md:px-12">
           <div className="flex gap-4 items-center ">
             <span>
-              <BsCalendar3 />
+              <BsCalendar3 className="text-secondary" />
             </span>
             <span>14 May, 2017</span>
           </div>
           <div className="flex gap-4 items-center">
             <span>
-              <AiOutlineComment />
+              <AiOutlineComment className="text-secondary" />
             </span>
             <span>03 Comment</span>
           </div>

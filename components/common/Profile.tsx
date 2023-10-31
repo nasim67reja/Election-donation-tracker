@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { AiFillTwitterCircle } from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import { AiFillTwitterCircle, AiOutlineTwitter } from "react-icons/ai";
+import { BiLogoFacebook } from "react-icons/bi";
 
 const CandidateProfile = () => {
   return (
@@ -14,20 +14,20 @@ const CandidateProfile = () => {
 
         <div>
           <h4 className="heading-four mb-4">John Doe</h4>
-          <p className="text-small mb-2">Political Affiliation</p>
+          <p className="text-small mb-4">Political Affiliation</p>
           <div className="flex  gap-3 items-center">
-            <Link href={"#"}>
-              <BsFacebook className=" w-[1.5rem]  h-auto  hover:text-[#3b5998] " />
+            <Link href={"#"} className="border rounded-full p-1">
+              <BiLogoFacebook className=" w-[1.8rem]  h-auto  hover:text-[#3b5998] " />
             </Link>
-            <Link href={"#"}>
-              <AiFillTwitterCircle className="w-[1.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
+            <Link href={"#"} className="border rounded-full p-1">
+              <AiOutlineTwitter className="w-[1.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
             </Link>
           </div>
         </div>
       </div>
 
       {/* Bio */}
-      <div className="mt-4">
+      <div className="mt-6">
         <h4 className="heading-four  mb-2">Bio</h4>
         <p className="text-small !leading-[20px]">
           John Doe is a seasoned politician with a background in...
@@ -35,7 +35,7 @@ const CandidateProfile = () => {
       </div>
 
       {/* Campaign Platform */}
-      <div className="mt-4">
+      <div className="mt-8">
         <h4 className="heading-four  mb-2">Campaign Platform</h4>
         <p className="text-small  !leading-[20px]">
           John Doe's campaign focuses on addressing key issues such as...

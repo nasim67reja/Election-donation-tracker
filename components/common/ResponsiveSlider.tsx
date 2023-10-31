@@ -18,24 +18,24 @@ const Card = () => {
         />
       </div>
       <div className="py-4 2xl:py-8 px-4 2xl:px-8">
-        <div className="flex gap-4 !text-[#ea000d] text-small font-semibold items-center">
+        <div className="flex gap-4 !text-secondary text-small font-semibold items-center">
           <span>
             <AiOutlineClockCircle />
           </span>
           <span>01d : 11h : 22m : 42s</span>
         </div>
-        <h4 className="heading-tertiary my-2">Presidential Elections 2017</h4>
+        <h4 className="heading-four my-4">Presidential Elections 2017</h4>
         <div className="flex gap-6 text-small">
           <div className="flex gap-4 items-center">
             <span>
-              <BsCalendar3 />
+              <BsCalendar3 className="text-secondary" />
             </span>
             <span>4 May, 2017</span>
           </div>
           <div>|</div>
           <div className="flex gap-4 items-center">
             <span>
-              <AiOutlineComment />
+              <AiOutlineComment className="text-secondary" />
             </span>
             <span>02 Comment</span>
           </div>
