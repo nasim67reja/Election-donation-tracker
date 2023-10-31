@@ -1,6 +1,7 @@
 import React from "react";
 import Count from "../common/Count";
 import SectionLayout from "../common/SectionLayout";
+import { lora } from "@/app/fonts";
 
 const El = ({ imglink, num, text }: any) => {
   return (
@@ -12,7 +13,9 @@ const El = ({ imglink, num, text }: any) => {
         </p>
       </div>
 
-      <p className="text-[35px] md:text-[40px] lg:text-[50px] font-medium  lora !mb-0">
+      <p
+        className={`text-[35px] md:text-[40px] lg:text-[50px] font-medium  ${lora.className} !mb-0`}
+      >
         <Count num={num} duration={3} />
       </p>
     </div>

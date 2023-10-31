@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Card = () => {
   return (
-    <div className="border max-w-[370px] card overflow-hidden group cursor-pointer">
+    <div className="border max-w-[370px] card overflow-hidden group cursor-pointer hover:shadow-xl">
       {/* <Image src=""/> */}
       <div className=" overflow-hidden">
         <img
@@ -17,14 +17,14 @@ const Card = () => {
           className="duration-300 group-hover:scale-125"
         />
       </div>
-      <div className="py-3 2xl:py-6 px-6 2xl:px-12">
-        <div className="flex gap-4 text-primary text-small font-semibold items-center">
+      <div className="py-4 2xl:py-8 px-4 2xl:px-8">
+        <div className="flex gap-4 !text-[#ea000d] text-small font-semibold items-center">
           <span>
             <AiOutlineClockCircle />
           </span>
           <span>01d : 11h : 22m : 42s</span>
         </div>
-        <h4 className="heading-tertiary">Presidential Elections 2017</h4>
+        <h4 className="heading-tertiary my-2">Presidential Elections 2017</h4>
         <div className="flex gap-6 text-small">
           <div className="flex gap-4 items-center">
             <span>

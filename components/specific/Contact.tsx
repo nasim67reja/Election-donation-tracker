@@ -75,7 +75,7 @@ export default Contact;
 
 const Row = ({ title, icon, address, phone, email }: any) => {
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col md:items-start items-center ">
       <h4 className="heading-four mb-1 flex items-center gap-4">
         <span>
           <Image
@@ -89,9 +89,11 @@ const Row = ({ title, icon, address, phone, email }: any) => {
         <span>{title}</span>
       </h4>
       <div>
-        <p className="text-small text-center">{phone}</p>
-        <p className="text-small !leading-[1.4] text-center">{address}</p>
-        <p className="text-small text-center">{email}</p>
+        <p className="text-small md:items-start items-center">{phone}</p>
+        <p className="text-small !leading-[1.4] md:items-start items-center">
+          {address}
+        </p>
+        <p className="text-small md:items-start items-centerr">{email}</p>
       </div>
     </div>
   );
@@ -99,7 +101,7 @@ const Row = ({ title, icon, address, phone, email }: any) => {
 
 const Adress = ({ address, title, phone, email }: any) => {
   return (
-    <div className="flex flex-col justify-around items-center">
+    <div className="flex flex-col justify-around items-center md:items-start">
       <h3 className="heading-tertiary mb-10">{title}</h3>
       <div className="flex flex-col gap-8 ">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />

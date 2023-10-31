@@ -59,11 +59,7 @@ const Col = ({ text, links }: any) => {
             if (i < links.length / 2) {
               return (
                 <li className="text-small" key={i}>
-                  {typeof el === "string" ? (
-                    <>{el}</>
-                  ) : (
-                    <Link href={`${el.link}`}>{el.title}</Link>
-                  )}
+                  {typeof el === "string" ? <>{el}</> : <>{el.title}</>}
                 </li>
               );
             }
@@ -85,7 +81,12 @@ const Col = ({ text, links }: any) => {
                 {typeof el === "string" ? (
                   <>{el}</>
                 ) : (
-                  <Link href={`${el.link}`}>{el.title}</Link>
+                  <Link
+                    className="hover:opacity-80 transition-all hover:border-b-2 border-primary"
+                    href={`${el.link}`}
+                  >
+                    {el.title}
+                  </Link>
                 )}
               </li>
             );
@@ -99,7 +100,7 @@ const Footer = () => {
   return (
     <footer data-aos="fade-up">
       <SectionLayout bg="bg-[#f0f7fb]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[25%_18%_18%_39%] xl:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[31%_15%_15%_39%] xl:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
           <div className="">
             <div className="center md:block">
               <Image
@@ -123,6 +124,10 @@ const Footer = () => {
             <h4 className="mb-10 heading-four text-center md:text-start ">
               By subscribing we inform about
             </h4>
+            <p className="text-small mb-4">
+              Be the first to know about campaign milestones, events, and
+              impactful stories. Join us in shaping a better future!
+            </p>
             <div className="flex flex-col items-center md:items-start gap-y-6">
               <input
                 className="bg-[#eae7e7] py-[0.8rem] px-6 rounded-sm text-[1.3rem] focus:outline-none w-full"

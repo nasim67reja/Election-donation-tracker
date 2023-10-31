@@ -20,7 +20,7 @@ const About = () => {
           </div>
 
           <div className="">
-            <h3 className="heading-tertiary text-center md:text-start ">
+            <h3 className="heading-tertiary text-center md:text-start mb-4">
               Where It All Began
             </h3>
             <p className="text-small text-center md:text-start ">
