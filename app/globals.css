@@ -17,6 +17,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Lora", serif;
 }
 
 /* tailwind class */
@@ -87,9 +88,9 @@ body {
 .lora {
   font-family: "Lora", serif;
 }
-.raleway {
+/* .raleway {
   font-family: "Raleway", sans-serif;
-}
+} */
 /* h1,
 h2,
 h3,
