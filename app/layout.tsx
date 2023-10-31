@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import AOSComponent from "@/components/common/Aos";
+import { raleway } from "./fonts";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={raleway.className}>
       <body>
         <AOSComponent>
           <Navbar />
