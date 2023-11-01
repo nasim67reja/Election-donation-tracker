@@ -15,11 +15,11 @@ const CandidateProfile = () => {
         <div>
           <h4 className="heading-four mb-4">John Doe</h4>
           <p className="text-small mb-4">Political Affiliation</p>
-          <div className="flex  gap-3 items-center">
-            <Link href={"#"} className="border rounded-full p-1">
+          <div className="flex  gap-2 items-center">
+            <Link href={"#"} className=" p-1">
               <BiLogoFacebook className=" w-[1.8rem]  h-auto  hover:text-[#3b5998] " />
             </Link>
-            <Link href={"#"} className="border rounded-full p-1">
+            <Link href={"#"} className=" p-1">
               <AiOutlineTwitter className="w-[1.8rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
             </Link>
           </div>
@@ -27,17 +27,17 @@ const CandidateProfile = () => {
       </div>
 
       {/* Bio */}
-      <div className="mt-6">
-        <h4 className="heading-four  mb-2">Bio</h4>
-        <p className="text-small !leading-[20px]">
+      <div className="mt-8">
+        <h4 className="heading-four  mb-3">Bio</h4>
+        <p className="text-small ">
           John Doe is a seasoned politician with a background in...
         </p>
       </div>
 
       {/* Campaign Platform */}
-      <div className="mt-8">
-        <h4 className="heading-four  mb-2">Campaign Platform</h4>
-        <p className="text-small  !leading-[20px]">
+      <div className="mt-10">
+        <h4 className="heading-four  mb-3">Campaign Platform</h4>
+        <p className="text-small  ">
           John Doe's campaign focuses on addressing key issues such as...
           {/* Add relevant campaign platform information */}
         </p>

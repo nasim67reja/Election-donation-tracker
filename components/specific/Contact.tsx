@@ -38,32 +38,38 @@ const Contact = () => {
         />
         <div
           data-aos="fade-up"
-          className="flex flex-wrap justify-center md:justify-between gap-20 "
+          className="flex flex-wrap justify-center md:justify-between gap-20"
         >
-          <div className="md:flex-1 ">
-            <Adress
-              title="Tampa Office"
-              address={address[0].address}
-              phone={address[0].phone}
-              email={address[0].email}
-            />
+          {/* <div className="md:flex-1 "></div> */}
+
+          <div className="md:flex-1 flex">
+            <div className="md:flex-1">
+              <Adress
+                title="Tampa Office"
+                address={address[0].address}
+                phone={address[0].phone}
+                email={address[0].email}
+                bg="bg-[#e5edf5]"
+              />
+            </div>
+            <div className="md:flex-1">
+              <Adress
+                title="Asia Office"
+                address={address[1].address}
+                phone={address[1].phone}
+                email={address[1].email}
+                bg="bg-[#edf4fa]"
+              />
+            </div>
           </div>
 
-          <div className="md:flex-1 ">
-            <Adress
-              title="Asia Office"
-              address={address[1].address}
-              phone={address[1].phone}
-              email={address[1].email}
-            />
-          </div>
-
-          <div className="md:flex-[2]">
+          <div className="md:flex-1">
             <div className=" mx-auto">
-              <h4 className="heading-four !text-center">
-                Just send us your questions or concerns by starting a new
-                message and we will give you the help you need.
-              </h4>
+              <h3 className="heading-tertiary mb-4">Reach Out Anytime</h3>
+              <p className="text-small">
+                Feel free to drop us a line. We're always ready to answer your
+                questions and hear your thoughts.
+              </p>
               <Form />
             </div>
           </div>
@@ -101,10 +107,12 @@ const Row = ({ title, icon, address, phone, email }: any) => {
   );
 };
 
-const Adress = ({ address, title, phone, email }: any) => {
+const Adress = ({ address, title, phone, email, bg }: any) => {
   return (
-    <div className="flex flex-col justify-around items-center md:items-start">
-      <h3 className="heading-tertiary mb-10">{title}</h3>
+    <div
+      className={`flex flex-col  items-center md:items-start gap-12 ${bg} h-full p-[25px]`}
+    >
+      <h3 className="heading-tertiary">{title}</h3>
       <div className="flex flex-col gap-8 ">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
         <Row title="Address" icon="/assets/location.svg" address={address} />

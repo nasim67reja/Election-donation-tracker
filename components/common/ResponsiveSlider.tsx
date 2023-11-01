@@ -1,10 +1,32 @@
 import Image from "next/image";
-import { AiOutlineClockCircle, AiOutlineComment } from "react-icons/ai";
+import {
+  AiOutlineClockCircle,
+  AiOutlineComment,
+  AiOutlineLeft,
+  AiOutlineRight,
+} from "react-icons/ai";
 import { BsCalendar3 } from "react-icons/bs";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+const CustomNextArrow = ({ onClick }: any) => (
+  <button
+    onClick={onClick}
+    className="custom-next-arrow border-[1px] border-[#aaa] hover:border-primary hover:text-white hover:bg-primary rounded-full text-[#aaa] text-[18px] h-[42px] px-[11px] absolute top-1/2 translate-y-1/2 2xl:right-[-30px] right-[-10px]"
+  >
+    <AiOutlineRight />
+  </button>
+);
+const CustomPrevArrow = ({ onClick }: any) => (
+  <button
+    onClick={onClick}
+    className="custom-prev-arrow custom-next-arrow border-[1px] border-[#aaa] rounded-full hover:border-primary hover:text-white hover:bg-primary  text-[#aaa] text-[18px] h-[42px] px-[11px] absolute top-1/2 translate-y-1/2 2xl:left-[-42px] left-[-20px] md:left-[-10px] z-10"
+  >
+    <AiOutlineLeft />
+  </button>
+);
 
 const Card = () => {
   return (
@@ -53,6 +75,8 @@ const ResponsiveSlider: React.FC = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     responsive: [
       {
         breakpoint: 900,

@@ -97,17 +97,11 @@ body {
 }
 
 /*  slider */
+.slick-slider {
+  position: relative !important;
+}
 .slick-list {
   margin-left: 20px !important;
-}
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: blue; /* Change this to your desired color */
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: gray !important;
 }
 
 @media (min-width: 720px) {
@@ -163,9 +157,12 @@ body {
 }
 
 /* responsive slider*/
-@media (max-width: 1240px) {
+@media (max-width: 1340px) {
   .card {
     max-width: 340px;
+  }
+  .custom-next-arrow {
+    /* right: 0; */
   }
 }
 
